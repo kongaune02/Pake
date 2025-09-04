@@ -132,6 +132,8 @@ class PakeBuildManager {
       params.push("--show-system-tray");
     }
 
+    params.push("--hide-on-close");
+
     // Icon handling
     if (process.env.ICON?.trim()) {
       params.push("--icon", process.env.ICON);
